@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarvepalli Sai Samyuktha - Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+body{background:#f8fafc;color:#334155;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid #e2e8f0;box-shadow:0 1px 10px rgba(0,0,0,0.05)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;color:#0f172a}.logo span{color:#2563eb}
+.nav-links{display:flex;gap:28px;font-size:14px;font-weight:600;color:#64748b}
+.nav-links a:hover{color:#2563eb}
+.btn{background:#2563eb;color:#fff!important;padding:9px 18px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:0 4px 12px rgba(37,99,235,0.25)}
+.hero{padding:130px 0 60px;display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero-left{flex:1.3;min-width:320px}
+.badge{display:inline-block;background:#dbeafe;border:1px solid #bfdbfe;color:#1d4ed8;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700}
+.hero h1{font-size:52px;line-height:1.1;margin:18px 0 12px;color:#0f172a}
+.hero h1 span{color:#2563eb}
+.hero p{color:#64748b;font-size:17px;max-width:560px}
+.hero-btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{border:1px solid #cbd5e1;background:#fff;padding:10px 20px;border-radius:999px;font-weight:600;font-size:14px;color:#0f172a}
+.hero-right{flex:0.7;min-width:280px}
+.profile-card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:28px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.avatar{width:110px;height:110px;background:linear-gradient(135deg,#60a5fa,#2563eb);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:800;color:#fff;margin:0 auto 14px}
+.profile-card h3{color:#0f172a;font-size:20px}
+.profile-card p{color:#64748b;font-size:14px;margin:6px 0 14px}
+.tag{display:inline-block;background:#eff6ff;border:1px solid #dbeafe;color:#1d4ed8;padding:5px 11px;border-radius:999px;font-size:12px;margin:3px;font-weight:600}
+.contact-line{margin-top:16px;font-size:13px;color:#64748b;line-height:1.8}
+.section{padding:55px 0}
+.section-title{font-size:28px;color:#0f172a;margin-bottom:6px}
+.section-sub{color:#64748b;margin-bottom:28px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.04)}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.2s}
+.card h3{color:#0f172a;font-size:18px;margin-bottom:8px}
+.card p{color:#64748b;font-size:14.5px}
+.timeline{border-left:2px solid #bfdbfe;padding-left:24px}
+.t-item{position:relative;margin-bottom:30px}
+.t-item::before{content:'';position:absolute;left:-32px;top:6px;width:14px;height:14px;background:#2563eb;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #2563eb}
+.t-year{color:#2563eb;font-weight:700;font-size:13px}
+.t-item h3{color:#0f172a;margin:4px 0 2px}
+.t-item p{color:#64748b;font-size:14px}
+.proj-top{color:#2563eb;font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+.proj-link{display:inline-block;margin-top:16px;color:#2563eb;font-weight:700;font-size:14px}
+.skill-box{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.mini-card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+.mini-card h4{color:#0f172a;font-size:16px}
+.mini-card p{color:#64748b;font-size:13px;margin-top:4px}
+.emoji{font-size:28px}
+.footer{text-align:center;padding:40px 0 50px;border-top:1px solid #e2e8f0;margin-top:20px;background:#fff}
+.footer h2{color:#0f172a;font-size:26px}
+.footer p{color:#64748b;margin:10px 0 20px}
+@media(max-width:600px){.hero h1{font-size:36px}.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="nav-inner"><div class="logo">SS<span>.</span></div><div class="nav-links"><a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><a href="https://github.com/Sammu-sarvepalli" target="_blank" class="btn">GitHub ↗</a></div></nav>
+
+<div class="container">
+<div class="hero" id="about">
+<div class="hero-left">
+<span class="badge">● AVAILABLE FOR OPPORTUNITIES</span>
+<h1>Hi🙋‍♀️, I'm <br><span>Sarvepalli Sai Samyuktha</span></h1>
+<p>Computer Science graduate with hands-on experience in Python, Machine Learning, and SQL. Eager to apply technical skills in a challenging environment, contribute to impactful projects, and grow both personally and professionally within a dynamic organization.</p>
+<p style="margin-top:12px;color:#0f172a;font-weight:600">B.Tech CSE • CGPA 8.10 • Narayana Engineering College, Gudur</p>
+<div class="hero-btns"><a href="#projects" class="btn">View My Projects →</a><a href="#contact" class="btn-outline">Contact Me</a></div>
+</div>
+<div class="hero-right">
+<div class="profile-card"><img src="Copy of samyuktha.png" alt="Sai Samyuktha" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #2563eb;display:block;margin:0 auto 14px;"><h3>Sarvepalli Sai Samyuktha</h3><p>B.Tech CSE, Graduated<br>Nellore, Andhra Pradesh</p><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">MySQL</span><span class="tag">UI/UX</span><div class="contact-line">saisamyutha2005@gmail.com<br>+91 9063074425</div></div>
+</div>
+</div>
+
+<div class="section" id="education">
+<h2 class="section-title">🎓Education</h2><p class="section-sub">My academic journey so far.</p>
+<div class="timeline">
+<div class="t-item"><span class="t-year">2022 - 2026</span><h3>B.Tech in Computer Science & Engineering</h3><p>@ Narayana Engineering College, Gudur<br>CGPA: 8.10</p></div>
+<div class="t-item"><span class="t-year">2020 - 2022</span><h3>Intermediate MPC</h3><p>@ Viswasai Junior College, Nellore<br>Percentage: 76%</p></div>
+<div class="t-item"><span class="t-year">2019 - 2020</span><h3>SSC</h3><p>@ Ratnam High School, Nellore<br>Percentage: 97%</p></div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="section-title">👩‍💻What I Know</h2><p class="section-sub">Technologies I have worked with.</p>
+<div class="grid">
+<div class="card"><h3>💻 Programming Languages</h3><div class="skill-box"><span class="tag">Python</span><span class="tag">Java (Basics)</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span></div></div>
+<div class="card"><h3>⚙️ Tools</h3><div class="skill-box"><span class="tag">VS Code</span><span class="tag">GitHub</span><span class="tag">MS Office</span><span class="tag">AI Tools</span></div></div>
+</div>
+</div>
+
+
+<div class="section">
+<h2 class="section-title">📜Certifications</h2>
+<div class=" container">
+<div class="card"><div class="skill-box"></div><p style="margin-top:10px"> • Software Engineering - IBM <br> • Fundamentals of Python - Infosys <br>• Cloud Computing - NPTEL</p></div>
+</div>
+
+
+<div class="section" id="projects">
+<h2 class="section-title">💼Projects</h2><p class="section-sub">Some of my best work.</p>
+<div class="grid">
+<div class="card"><span class="proj-top">Final Year Project</span><h3>Efficient And Effective Blind JPEG Image Improvement with Sequential Feature Processing</h3><p>Deep learning-based artifact removal model to enhance JPEG image quality using sequential feature processing.</p><div style="margin-top:12px"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">CNN</span></div><a class="proj-link" href="https://github.com/Sammu-sarvepalli" target="_blank">View on GitHub →</a></div>
+<div class="card"><span class="proj-top">Machine Learning + XAI</span><h3>Breast Cancer Detection using ML & Explainable AI</h3><p>Classification pipeline using Random Forest & SVM ~94% accuracy. Integrated SHAP / LIME for model transparency.</p><div style="margin-top:12px"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">SHAP</span></div><a class="proj-link" href="https://github.com/Sammu-sarvepalli" target="_blank">View on GitHub →</a></div>
+<div class="card"><span class="proj-top">Database Project</span><h3>Library Management System</h3><p>Full CRUD-based system supporting 500+ book records, member tracking, issue / return workflows.</p><div style="margin-top:12px"><span class="tag">MySQL</span><span class="tag">Database Design</span></div><a class="proj-link" href="https://github.com/Sammu-sarvepalli" target="_blank">View on GitHub →</a></div>
+<a href="https://github.com/Sammu-sarvepalli" target="_blank" style="text-decoration:none;">
+<div class="card" style="text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:260px;background:#eff6ff;border:2px dashed #2563eb;">
+<h3 style="font-size:32px;">+ And More...</h3>
+<p>Calculator, Hangman Game,<br>Guess The Number,<br>Rock Paper Scissors & more!</p>
+<span style="display:inline-block;margin-top:16px;background:#2563eb;color:#fff;padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px;">View All on GitHub →</span>
+</div>
+</a>
+</div>
+</div>
+
+
+
+<div class="footer" id="contact">
+<h2>Let's Connect! ✨</h2><p>Open to internships and jobs. Feel free to reach out!</p>
+<a href="mailto:saisamyutha2005@gmail.com" class="btn" style="margin:4px;display:inline-block">📧 Email Me</a>
+<a href="https://wa.me/919063074425" target="_blank" class="btn" style="margin:4px;display:inline-block;background:#25D366">💬 WhatsApp</a>
+<a href="https://www.linkedin.com/in/sarvepalli-sai-samyuktha-8b88472b6/" target="_blank" class="btn" style="margin:4px;display:inline-block;background:#0077b5">💼 LinkedIn</a>
+<a href="https://github.com/Sammu-sarvepalli" target="_blank" class="btn" style="margin:4px;display:inline-block;background:#0f172a">🔗 GitHub</a>
+<br><br><small style="color:#94a3b8">© 2026 Sarvepalli Sai Samyuktha • Nellore, AP</small>
+</div>
+</div>
+</body>
+</html>
